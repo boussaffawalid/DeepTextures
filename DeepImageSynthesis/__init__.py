@@ -1,3 +1,3 @@
-import LossFunctions
-from ImageSyn import ImageSyn
+from . import LossFunctions
+from . import ImageSyn
 from .Misc import *

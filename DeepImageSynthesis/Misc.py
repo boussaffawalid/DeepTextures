@@ -23,7 +23,7 @@ def get_indices(net, constraints):
     '''
 
     indices = [ndx for ndx,layer in enumerate(net.blobs.keys()) if layer in constraints.keys()]
-    return net.blobs.keys(),indices[::-1]
+    return list(net.blobs.keys()) ,indices[::-1]
 
 def show_progress(x, net, title=None, handle=False):
     '''
